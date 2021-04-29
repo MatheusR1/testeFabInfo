@@ -44,7 +44,10 @@
                     @endforeach
                 </select>
             </div>
-            <button class="btn btn-success btn-md" type="submit"> Cadastrar</button>
+            <div class="btn-group">
+                <a class="btn btn-secondary mr-3" href="{{route('documentos.index')}}">voltar</a>
+                <button class="btn btn-success btn-md" type="submit"> Cadastrar</button>
+            </div>
         </form>
     </div>
 @endsection
