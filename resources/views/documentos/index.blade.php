@@ -59,6 +59,7 @@
                     @endforeach
                 </tbody>
             </table>
+            <a class="btn btn-secondary" href="{{route('documentos.create')}}">voltar</a>
         </div>
     </div>
 @endsection

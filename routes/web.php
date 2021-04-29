@@ -22,4 +22,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('documentos','DocumentosController')->middleware('auth');
+Route::resource('documentos','DocumentosController')->except('documentos.show')->middleware('auth');
