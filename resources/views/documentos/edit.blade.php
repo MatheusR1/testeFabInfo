@@ -22,7 +22,8 @@
 
     <div class="container">
         <h2 class="mb-3"> Cadastro Documentos</h2>
-        <form method="POST" action="{{ route('documentos.store') }}">
+        <form action="{{ route('documentos.update',['documento' =>$documento->id]) }}" method="POST" >
+            @method('PUT')
             @csrf
             <div class="form-group">
                 <label for="exampleFormControlInput1">Titulo</label>
