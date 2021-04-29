@@ -24,9 +24,9 @@ class documentosRequest extends FormRequest
     public function rules()
     {
         return [
-            'titulo'       => 'required | size:100',
-            'nome_arquivo' => 'required | size:100',
-            'tipo_id'      => 'required | integer'
+            'titulo'       => 'required|string|max:100',
+            'nome_arquivo' => 'required|string|max:100',
+            'tipo_id'      => 'required|integer'
         ];
     }
 
@@ -34,9 +34,9 @@ class documentosRequest extends FormRequest
     {
         return [
             'titulo.required'       => 'O campo titulo é obrigatorio',
-            'titulo.size'           => 'Titulo muito grande',
+            'titulo.max'           => 'Titulo muito grande',
             'nome_arquivo.required' => 'O campo nome do arquivo é obrigatorio',
-            'nome_arquivo.size'     => 'Nome muito grande',
+            'nome_arquivo.max'     => 'Nome muito grande',
             'tipo_id.required'      => 'O campo tipo é obrigatorio',
             'tipo_id.integer'       => 'Tipo inválido'
         ];

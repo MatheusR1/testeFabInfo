@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Documentos;
 use App\Http\Requests\documentos\documentosRequest;
 use App\TipoDocumento;
-use Illuminate\Http\Request;
 
 class DocumentosController extends Controller
 {
